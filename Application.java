@@ -11,6 +11,7 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.paint.Color;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.beans.value.ChangeListener;
 import javafx.event.Event;
 import javafx.scene.text.Text;
 import javafx.scene.shape.Circle;
@@ -1036,24 +1037,24 @@ public class Application extends javafx.application.Application{
 
 			circularPathRadiusLabel.relocate(20, 160);
 			circularPathRadiusField.relocate(20, 190);
-			massLabel.relocate(260, 160);
-			massField.relocate(260, 190);
+			massLabel.relocate(290, 160);
+			massField.relocate(290, 190);
 			velocityLabel.relocate(20, 260);
 			velocityField.relocate(20, 290);
-			totalTimeLabel.relocate(260, 260);
-			totalTimeField.relocate(260, 290);
+			totalTimeLabel.relocate(290, 260);
+			totalTimeField.relocate(290, 290);
 			cyclesLabel.relocate(20, 360);
 			cyclesField.relocate(20, 390);
-			singleCyclesTimeLabel.relocate(260, 360);
-			singleCyclesTimeField.relocate(260, 390);
+			singleCyclesTimeLabel.relocate(290, 360);
+			singleCyclesTimeField.relocate(290, 390);
 			frequencyLabel.relocate(20, 460);
 			frequencyField.relocate(20, 490);
-			angularVelocityLabel.relocate(260, 460);
-			angularVelocityField.relocate(260, 490);
+			angularVelocityLabel.relocate(290, 460);
+			angularVelocityField.relocate(290, 490);
 			angularAccelerationLabel.relocate(20, 560);
 			angularAccelerationField.relocate(20, 590);
-			centripetalForceLabel.relocate(260, 560);
-			centripetalForceField.relocate(260, 590);
+			centripetalForceLabel.relocate(290, 560);
+			centripetalForceField.relocate(290, 590);
 			
 			for(Object e : cmaRoot.getChildren()){
 				if(e instanceof Label){
@@ -1072,7 +1073,7 @@ public class Application extends javafx.application.Application{
 
 			cmaRoot.setBackground(new Background(new BackgroundFill(Color.rgb(55, 55, 55), null, null)));
 
-			cmaStage.setScene(new Scene(cmaRoot, 480, 650));
+			cmaStage.setScene(new Scene(cmaRoot, 510, 650));
 			cmaStage.show();
 		});
 		//-----------------------------------------------------------------------------------------------------------
